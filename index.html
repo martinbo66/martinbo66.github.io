@@ -4,22 +4,26 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
         <title>Welcome to bomartin&period;org</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Personal website of Bo Martin - Software Engineer, Engineering Manager, and dog lover in East Tennessee" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
+		<!-- Skip Navigation -->
+		<a href="#main-content" class="skip-link">Skip to main content</a>
+
 		<!-- Sidebar -->
-			<section id="sidebar">
+			<section id="sidebar" role="navigation" aria-label="Main navigation">
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#intro" aria-current="page">Welcome</a></li>
 						    <li><a href="#one">About Bo</a></li>
 							<li><a href="#two">Here's Teddy</a></li>
 							<li><a href="#three">TV Bingo</a></li>
@@ -29,72 +33,71 @@
 			</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" role="main" id="main-content">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<section id="intro" class="wrapper style1 fullscreen fade-up" aria-labelledby="intro-heading">
 						<div class="inner">
-							<h1>Welcome</h1>
+							<h1 id="intro-heading">Welcome</h1>
                             <p>
                                 This is the personal web site of Bo Martin. It's just a static site using
                                 Github pages. You can't really do anything here but learn a little about
                                 Bo.
-                              </p>
-                              <ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
+                            </p>
+                            <ul class="actions">
+								<li><a href="#one" class="button scrolly" aria-label="Learn more about Bo">Learn more</a></li>
 							</ul>
                         </div>
 					</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
+					<section id="one" class="wrapper style2 spotlights" aria-labelledby="about-heading">
 						<section>
-							<a href="#" class="image"><img src="images/bo-on-trail.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image" aria-hidden="true"><img src="images/bo-on-trail.jpg" alt="Bo Martin hiking on a trail" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>About Bo</h2>
+									<h2 id="about-heading">About Bo</h2>
                                     <p>
                                         I live in East Tennessee. It's not that great. You wouldn't be interested.
                                         Kidding.
-                                      </p>
-                                      <p>
+                                    </p>
+                                    <p>
                                         Professionally, I'm a software engineer and engineering manager. Learn
                                         more about me professionally
-                                        <a href="https://www.linkedin.com/in/bo-martin/">here on LinkedIn</a>. My
+                                        <a href="https://www.linkedin.com/in/bo-martin/" aria-label="Visit Bo's LinkedIn profile">here on LinkedIn</a>. My
                                         current role is Director of Software Engineering at
-                                        <a href="https://lirio.com/">Lirio</a>.
-                                      </p>
-                                      <p>
+                                        <a href="https://lirio.com/" aria-label="Visit Lirio's website">Lirio</a>.
+                                    </p>
+                                    <p>
                                         Personally, I'm a husband, uncle, brother, son and doggie daddy. I like
                                         playing and practicing golf. I enjoy traveling with my lovely wife, Mary
                                         Eva. I love good live music.
-                                      </p>
+                                    </p>
                                 </div>
 							</div>
 						</section>
 
-
 				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
+					<section id="two" class="wrapper style3 fade-up" aria-labelledby="teddy-heading">
 						<div class="inner">
-                            <h2>Here's Teddy</h2>
+                            <h2 id="teddy-heading">Here's Teddy</h2>
                             <p>
                                 He's a Carolina Dog mix. He has some special ways including getting on top
                                 of stuff.
-                              </p>
-                              <p>
-                                <img src="images/teddy-on-a-rock.jpg" alt="Teddy on a rock" />
-                              </p>
+                            </p>
+                            <p>
+                                <img src="images/teddy-on-a-rock.jpg" alt="Teddy, a Carolina Dog mix, standing on top of a rock" />
+                            </p>
 						</div>
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style3 fade-up">
+					<section id="three" class="wrapper style3 fade-up" aria-labelledby="bingo-heading">
 						<div class="inner">
-							<h2>TV Bingo</h2>
+							<h2 id="bingo-heading">TV Bingo</h2>
 							<p>
 								Welcome to TV Bingo! This is a fun way to make watching TV more entertaining. 
-								Visit <a href="https://www.bomartin.org/vue-tv-bingo/">bomartin.org/vue-tv-bingo</a> to play along with 
+								Visit <a href="https://www.bomartin.org/vue-tv-bingo/" aria-label="Play TV Bingo on bomartin.org">bomartin.org/vue-tv-bingo</a> to play along with 
 								your favorite shows. Each episode brings new bingo cards with common TV tropes, 
 								clichés, and predictable moments. Mark off squares as you spot them, and try 
 								to get a bingo before the episode ends!
@@ -102,13 +105,11 @@
 						</div>
 					</section>
 
-	
-
 		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
+			<footer id="footer" class="wrapper style1-alt" role="contentinfo">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Bo Martin. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Bo Martin. All rights reserved.</li><li>Design: <a href="http://html5up.net" aria-label="Visit HTML5 UP website">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
